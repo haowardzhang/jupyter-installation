@@ -18,5 +18,7 @@
 指定明确路径
 如果想避免歧义，最好显式传入路径：
 
+load_dotenv("/Users/username/code1/Jupyter/.env")
+
 
 总结：load_dotenv() 缺省会查找 .env，但不是"只在当前路径"——它会从调用文件位置开始向上递归查找父目录，找不到也不会报错
